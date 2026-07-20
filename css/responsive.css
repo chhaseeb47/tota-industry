@@ -1,0 +1,85 @@
+/* ============================================================
+   Tota Industry — Responsive Stylesheet
+   Breakpoints: 1024, 768, 640, 480
+   ============================================================ */
+
+/* ---------- Tablet & small desktop ---------- */
+@media (max-width: 1024px) {
+  .container { padding: 0 14px; }
+  .video-grid { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+  .section-title { font-size: 1.25rem; }
+}
+
+/* ---------- Mobile landscape / large phone ---------- */
+@media (max-width: 768px) {
+  .header-inner { height: 58px; gap: 10px; }
+  .brand { font-size: 1.05rem; }
+  .search-wrap { max-width: none; }
+  .search-wrap input { height: 38px; font-size: 0.9rem; }
+  .icon-btn { width: 38px; height: 38px; font-size: 1.1rem; }
+
+  .video-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .card-title { font-size: 0.88rem; }
+  .btn { font-size: 0.82rem; padding: 8px 10px; }
+
+  .page-card { padding: 22px 18px; }
+  .page-card h1 { font-size: 1.5rem; }
+  .page-card h2 { font-size: 1.1rem; }
+
+  .fab-whatsapp { width: 52px; height: 52px; bottom: 18px; right: 18px; }
+  .fab-whatsapp svg { width: 28px; height: 28px; }
+}
+
+/* ---------- Phone portrait ---------- */
+@media (max-width: 640px) {
+  .header-inner { gap: 8px; }
+  .brand { font-size: 1rem; }
+  /* On very small screens hide search label area, keep input */
+  .search-wrap input { padding: 0 40px 0 14px; }
+
+  /* Mobile: single column, one video per row (YouTube-style) */
+  .video-grid { grid-template-columns: 1fr; gap: 14px; }
+  .card-media { aspect-ratio: 16 / 9; }
+  .card-body { padding: 12px; }
+  .card-title { font-size: 0.95rem; -webkit-line-clamp: 2; }
+  .card-category { font-size: 0.72rem; padding: 3px 10px; }
+  .btn { font-size: 0.85rem; padding: 9px 12px; }
+  .btn-play { width: 56px; height: 56px; font-size: 1.3rem; }
+
+  .pagination { gap: 5px; }
+  .page-num, .page-nav { min-width: 34px; height: 34px; font-size: 0.82rem; padding: 0 8px; }
+
+  .popup-card { padding: 28px 20px; }
+  .popup-title { font-size: 1.15rem; }
+  .popup-text { font-size: 0.88rem; }
+}
+
+/* ---------- Very small phones ---------- */
+@media (max-width: 480px) {
+  .brand { font-size: 0.95rem; }
+  .search-wrap { max-width: 100%; }
+  .search-results { max-height: 320px; }
+
+  /* Keep single column on small phones too */
+  .video-grid { grid-template-columns: 1fr; gap: 12px; }
+  .card-title { font-size: 0.9rem; }
+
+  .page-card h1 { font-size: 1.3rem; }
+  .page-card { padding: 18px 14px; }
+
+  .fab-whatsapp { width: 48px; height: 48px; bottom: 14px; right: 14px; }
+}
+
+/* ---------- Landscape phones (short height) ---------- */
+@media (max-width: 900px) and (max-height: 500px) {
+  .video-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
