@@ -28,7 +28,7 @@ const VIDEOS = [
       "https://pub-88c56af15f2d40a0845416c1602e9d1f.r2.dev/Fatima%20Jatoi%20leak%20video%20.mp4",
     downloadUrl:
       "https://pub-88c56af15f2d40a0845416c1602e9d1f.r2.dev/Fatima%20Jatoi%20leak%20video%20.mp4",
-    thumbnail: "",
+    thumbnail: "https://pub-88c56af15f2d40a0845416c1602e9d1f.r2.dev/Fatima%20Jatoi%20leak%20video%20.mp4",
     category: "Tiktoker",
     page: 1,
   },
